@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/landingFragment">
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.example.pdf_reviewer.presentation.ui.landing.LandingFragment"
+        android:label="LandingFragment"
+        android:layout="@layout/fragment_landing">
+        <action
+            android:id="@+id/action_landing_to_result"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.pdf_reviewer.presentation.ui.result.ResultFragment"
+        android:label="ResultFragment"
+        android:layout="@layout/fragment_result" />
+</navigation>
